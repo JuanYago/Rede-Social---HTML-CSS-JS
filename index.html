@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <title>Rede Social</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./src/styles/assets/logo.svg" alt="Bem Social" />
+    </header>
+
+    <main>
+      <div class="newPost">
+        <div class="infoUser">
+          <div class="imgUser"></div>
+          <strong>Juan Yago</strong>
+        </div>
+
+        <!-- // Formulario de Postagem -->
+
+        <form action="" class="formPost" id="formPost">
+          <textarea
+            id="textarea"
+            name="textarea"
+            placeholder="Oque você está pensando?"
+          ></textarea>
+
+          <div class="iconsAndButton">
+            <div class="icons">
+              <button type="button" class="btnFileForm">
+                <img
+                  src="./src/styles/assets/img.svg"
+                  alt="Adicionar uma imagem"
+                />
+              </button>
+              <button type="button" class="btnFileForm">
+                <img src="./src/styles/assets/gif.svg" alt="Adicionar um gif" />
+              </button>
+              <button type="button" class="btnFileForm">
+                <img
+                  src="./src/styles/assets/video.svg"
+                  alt="Adicionar um video"
+                />
+              </button>
+            </div>
+
+            <button type="submit" class="btnSubmitForm">Publicar</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Postagem -->
+
+      <ul class="posts" id="posts"></ul>
+    </main>
+
+    <script type="module" src="./src/js/FormPost.js"></script>
+  </body>
+</html>
